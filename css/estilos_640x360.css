@@ -1,0 +1,25 @@
+
+/* Estilo Horizontal */
+@media screen and (max-width: 640px) and (max-height: 360px) {
+	
+	#div_locker_screen {
+		position: absolute;
+		width: 640px;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		z-index: 1000;
+		overflow: hidden;
+		background-color: #FFFFFF;
+		text-align: center;
+		display: block;
+	}
+	
+	#div_locker_screen h2 {
+		padding: 150px;
+		font-size: 20px;
+		color: #DE0000;
+		text-align: center;
+	}
+	
+}

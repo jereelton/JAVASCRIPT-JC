@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+	<title>Juros Compostos Valor Mensal</title>
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="pragma" content="no-cache" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/ico_juros.png" />
+	
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilos_360x640.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilos_640x360.css" type="text/css" />
+	
+</head>
+
+<body>
+
+<div id="div_conteiner_juros_jc">
+	
+	<div id="div_titulo_programa">
+		<p>Simulador Juros Compostos Com Valor Mensal</p>
+	</div>
+	
+	<div id="div_form_juros_compostos">
+	
+		<form method="POST">
+		
+			<p class="p_produto">::: Aporte Inicial</p>
+			<p class="p_produto">
+				<input type="text" id="capital" class="input_text" value="" onkeypress="return formata_moeda( this, '.', ',', event );" autocomplete="off" />
+			</p>
+			
+			<p class="p_produto">::: Deposito Mensal</p>
+			<p class="p_produto">
+				<input type="text" id="deposito_mensal" class="input_text" value="" onkeypress="return formata_moeda( this, '.', ',', event );" autocomplete="off" />
+			</p>
+			
+			<p class="p_produto">::: Qtde Meses</p>
+			<p class="p_produto">
+				<input type="text" id="qtde_meses" class="input_text" value="" onkeyup="return formata_decimal( 'qtde_meses' );" autocomplete="off" />
+			</p>
+			
+			<p class="p_produto">::: Taxa Anual</p>
+			<p class="p_produto">
+				<input type="text" id="taxa_anual" class="input_text" value="" onkeypress="return formata_moeda( this, '.', ',', event );" autocomplete="off" />
+			</p>
+			
+			<p class="p_produto">
+				<input type="button" class="input_button_calcular" value="Calcular" onclick="return calcularJurosCompostos();" />
+			</p>
+			
+			<p class="p_produto">
+				<input type="reset" class="input_button_recomecar" value="Recome&ccedil;ar" />
+			</p>
+			
+			<p class="p_produto">
+				<input type="reset" class="input_button" value="Home" onclick="location.href = 'index.html'" />
+			</p>
+			
+		</form>
+		
+	</div>
+	
+	<div id="div_resultado_calculo">
+		
+		<div id="div_table_header_resultado_calculo">
+			<table id="table_header_resultado_calculo"></table>
+		</div>
+		
+		<div id="div_table_resultado_calculo">
+			<table id="table_resultado_calculo"></table>
+		</div>
+		
+		<div id="div_montante_final">
+			<div id="div_nome_resultado">Capital Final</div>
+			<div id="div_valor_resultado"></div>
+		</div>
+			
+		<div id="div_rodape" onclick="javascript: location.reload(); ">
+			<div id="div_deposito"></div>
+			<div id="div_taxa_anual"></div>
+			<div id="div_taxa_mensal"></div>
+			<div id="div_taxa_mensal_porcentagem"></div>
+		</div>
+		
+	</div>
+	
+	<div id="div_mensagens_sucesso">
+		<div id="div_content_sucess"></div>
+	</div>
+	
+	<div id="div_mensagens_erro">
+		<div id="div_content_erro"></div>
+	</div>
+	
+</div>
+
+<div id="div_locker_screen"><h2>Modo Visual Indisponivel</h2></div>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/js_functions.js" type="text/javascript"></script>
+	
+</body>
+</html>

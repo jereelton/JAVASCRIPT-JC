@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+	<title>Calculador JC</title>
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="pragma" content="no-cache" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/ico_juros.png" />
+	
+	<link rel="stylesheet" href="css/estilos.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilos_360x640.css" type="text/css" />
+	<link rel="stylesheet" href="css/estilos_640x360.css" type="text/css" />
+	
+</head>
+
+<body>
+
+<div id="div_conteiner_juros_jc">
+	
+	<div id="div_titulo_programa">
+		<p>Escolha um tipo de Calculadora</p>
+	</div>
+	
+	<div id="div_form_juros_compostos">
+	
+		<form method="POST">
+			
+			<p class="p_produto">
+				<input type="button" class="input_button" value="Valor Mensal" onclick="location.href = 'juros_compostos_mensal.html'" />
+			</p>
+			
+			<p class="p_produto">
+				<input type="button" class="input_button" value="Valor Fixo" onclick="location.href = 'juros_compostos_fixo.html'" />
+			</p>
+			
+		</form>
+		
+	</div>
+	
+</div>
+
+<div id="div_locker_screen"><h2>Modo Visual Indisponivel</h2></div>
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/js_functions.js" type="text/javascript"></script>
+	
+</body>
+</html>
